@@ -1,0 +1,97 @@
+Age,"Fer
+mg/jour","Fer
+mg/jour","Fer
+mg/jour","Magnésium
+mg/jour","Magnésium
+mg/jour","Magnésium
+mg/jour","Manganèse
+mg/jour","Manganèse
+mg/jour","Molybdène
+μg/jour","Molybdène
+μg/jour","Molybdène
+μg/jour","Nickel
+mg/jour","Nickel
+mg/jour","Phosphore
+mg/jour","Phosphore
+mg/jour","Phosphore
+mg/jour",Arsenic,Arsenic,"Bore
+mg/jour","Bore
+mg/jour","Calcium
+mg/jour","Calcium
+mg/jour","Calcium
+mg/jour","Chrome
+μg/jour","Chrome
+μg/jour","Cuivre
+μg/jour","Cuivre
+μg/jour","Cuivre
+μg/jour","Fluor
+mg/jour","Fluor
+mg/jour","Iode
+μg/jour","Iode
+μg/jour","Iode
+μg/jour","Sélénium
+μg/jour","Sélénium
+μg/jour","Sélénium
+μg/jour",Silicium,Silicium,"Vanadium
+mg/jour","Vanadium
+mg/jour","Zinc
+mg/jour","Zinc
+mg/jour","Zinc
+mg/jour","Potassium
+mg/jour","Potassium
+mg/jour","Potassium
+mg/jour","Sodium
+mg/jour","Sodium
+mg/jour","Sodium
+mg/jour","Chlore
+mg/jour","Chlore
+mg/jour",Sulfate,Sulfate,Vitamine A,Vitamine A,Vitamine A,Vitamine A,Vitamine A,Vitamine A,Vitamine D,Vitamine D,Vitamine D,Vitamine D,Vitamine D,Vitamine D,Vitamine E,Vitamine E,Vitamine E,Vitamine K,Vitamine K,"Vitamine C
+mg/jour","Vitamine C
+mg/jour","Vitamine C
+mg/jour","Thiamine
+mg/jour","Thiamine
+mg/jour","Thiamine
+mg/jour","Riboflavine
+mg/jour","Riboflavine
+mg/jour","Riboflavine
+mg/jour",Niacine,Niacine,Niacine,"Vitamine B6
+mg/jour","Vitamine B6
+mg/jour","Vitamine B6
+mg/jour",Folate,Folate,Folate,"Vitamine B12
+μg/jour","Vitamine B12
+μg/jour","Vitamine B12
+μg/jour","Acide pantothénique
+mg/jour","Acide pantothénique
+mg/jour","Biotine
+μg/jour","Biotine
+μg/jour",Choline,Choline,Glucides (Digestibles),Glucides (Digestibles),Glucides (Digestibles),Protéines totales,Protéines totales,Protéines totales,Protéines totales,Lipides totaux,Lipides totaux,"Acide linoléique
+(n-6)","Acide linoléique
+(n-6)","Acide α-linolénique
+(n-3)","Acide α-linolénique
+(n-3)",Fibres totales,Fibres totales,Eau totale,Eau totale
+,BME,ANR/AS,AMT,BME,ANR/AS,AMT,AS,AMT,BME,ANR/AS,AMT,AS,AMT,BME,ANR/AS,AMT,AS,AMT,AS,AMT,BME,ANR/AS,AMT,AS,AMT,BME,ANR/AS,AMT,AS,AMT,BME,ANR/AS,AMT,BME,ANR/AS,AMT,AS,AMT,AS,AMT,BME,ANR/AS,AMT,AS,AMT,RRMC,AS,AMT,RRMC,AS,AMT,AS,AMT,"BME
+μg/jour (ÉAR)","ANR/AS
+μg/jour (ÉAR)",AMT,"BME
+UI/jour (ÉAR)","ANR/AS
+UI/jour (ÉAR)",AMT,"BME
+μg/jour","ANR/AS
+μg/jour","AMT
+μg/jour","BME
+UI/jour","ANR/AS
+UI/jour","AMT
+UI/jour","BME
+mg/jour","ANR/AS
+mg/jour",AMT,"AS
+μg/jour",AMT,BME,ANR/AS,AMT,BME,ANR/AS,AMT,BME,ANR/AS,AMT,BME,ANR/AS,AMT,BME,ANR/AS,AMT,BME,ANR/AS,AMT,BME,ANR/AS,AMT,AS,AMT,AS,AMT,AS,AMT,"BME
+g/jour","ANR/AS
+g/jour",AMT,"BME
+g/kg/jour","ANR/AS
+g/kg/jour","ANR/AS
+g/jour",AMT,"AS
+g/jour",AMT,"AS
+g/jour",AMT,"AS
+g/jour",AMT,AS,AMT,"AS
+Litres/jour",AMT
+≤ 18 ans,7,10,45,300,360,350,"2,6",9,35,50,1700,ND,"1,0",1055,1250,4000,ND,ND,ND,17,1100,1300,3000,44,ND,985,1300,8000,3,10,209,290,900,59,70,400,ND,ND,ND,ND,"10,9",13,34,2500,ND,ND,1500,ND,2300,2300,3600,ND,ND,885,1200,2800,2950,4000,9333,10,15,100,400,600,4000,16,19,800,75,ND,96,115,1800,"1,2","1,4",ND,"1,3","1,6",ND,13,17,30,"1,7","2,0",80,450,500,800,"2,4","2,8",ND,7,ND,35,ND,550,3000,160,210,ND,"1,05","1,3",71,ND,ND,ND,13,ND,"1,3",ND,29,ND,"3,8",ND
+19-30 ans,"6,5",9,45,255,310,350,"2,6",11,36,50,2000,ND,"1,0",580,700,4000,ND,ND,ND,20,800,1000,2500,45,ND,1000,1300,10000,3,10,209,290,1100,59,70,400,ND,ND,ND,ND,"10,4",12,40,2800,ND,ND,1500,ND,2300,2300,3600,ND,ND,900,1300,3000,3000,4333,10000,10,15,100,400,600,4000,16,19,1000,90,ND,100,120,2000,"1,2","1,4",ND,"1,3","1,6",ND,13,17,35,"1,7","2,0",100,450,500,1000,"2,4","2,8",ND,7,ND,35,ND,550,3500,160,210,ND,"1,05","1,3",71,ND,ND,ND,13,ND,"1,3",ND,29,ND,"3,8",ND
+31-50 ans,"6,5",9,45,265,320,350,"2,6",11,36,50,2000,ND,"1,0",580,700,4000,ND,ND,ND,20,800,1000,2500,45,ND,1000,1300,10000,3,10,209,290,1100,59,70,400,ND,ND,ND,ND,"10,4",12,40,2800,ND,ND,1500,ND,2300,2300,3600,ND,ND,900,1300,3000,3000,4333,10000,10,15,100,400,600,4000,16,19,1000,90,ND,100,120,2000,"1,2","1,4",ND,"1,3","1,6",ND,13,17,35,"1,7","2,0",,450,500,1000,"2,4","2,8",ND,7,ND,35,ND,550,3500,160,210,ND,"1,05","1,3",71,ND,ND,ND,13,ND,"1,3",ND,29,ND,"3,8",ND
