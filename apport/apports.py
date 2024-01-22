@@ -1,10 +1,9 @@
-import streamlit as st
 import numpy as np
 import pandas as pd
 from os import path
 
 
-def get_df(type_case):
+def get_df(type_case: str) -> pd.DataFrame:
 
     nutri_file = f"apport_{type_case}.csv"
     path_nutri_file = path.join("data","apport", nutri_file)
@@ -14,17 +13,17 @@ def get_df(type_case):
 
     return df
 
-def filter_multi_index_dataframe(df, choice, column_name="Age"):
+def filter_multi_index_dataframe(df:pd.DataFrame, choice:str, column_name:str="Age") -> pd.DataFrame:
     # Apply the boolean condition to filter the DataFrame
     condition = df[column_name].iloc[:, 0] == choice
     filtered_df = df[condition]
     return filtered_df.set_index(column_name)
 
 
-def get_needs_type(df, need_code: str):
+def get_needs_type(df: pd.DataFrame, need_code: str) -> pd.DataFrame:
     return df.xs(need_code, axis=1, level=1, drop_level=True)
 
-def set_to_numeric(df):
+def set_to_numeric(df: pd.DataFrame) -> pd.DataFrame:
 
     df = df.replace("ND", np.nan)
 
