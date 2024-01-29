@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.hatchling.dynamic]
+dependencies = {file = ["requirements.txt"]}
+[tool.setuptools]
+py-modules = ['data', 'intake', 'foodfact']
+[project]
+name = "vnutrition"
+version = "0.0.1"
+requires-python = ">=3.10"
+authors = [
+  {name = "Tonow"},
+]
+maintainers = [
+  {name = "Tonow"}
+]
+description = "Help for nutrition"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["vegan", "nutrition"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+[project.urls]
+Homepage = "https://vnutrition.streamlit.app"
+Documentation = "https://readthedocs.org"
+Repository = "https://gitlab.com/vnutrition/vnutrition-github"
