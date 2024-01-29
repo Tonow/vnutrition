@@ -11,4 +11,4 @@ APPORT_QTY = {
     "Besoin énergétique estimatif": "BÉE",
     "Risque réduit de maladies chroniques": "RRMC",
 }
-APPORT_README_PATH = 'apport'
+APPORT_README_PATH = 'intake'

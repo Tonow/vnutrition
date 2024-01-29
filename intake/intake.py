@@ -1,8 +1,9 @@
 import numpy as np
 import pandas as pd
 from os import path
+import streamlit as st
 
-
+@st.cache_data
 def get_df(type_case: str) -> pd.DataFrame:
 
     nutri_file = f"apport_{type_case}.csv"
@@ -13,6 +14,7 @@ def get_df(type_case: str) -> pd.DataFrame:
 
     return df
 
+@st.cache_data
 def filter_multi_index_dataframe(df:pd.DataFrame, choice:str, column_name:str="Age") -> pd.DataFrame:
     # Apply the boolean condition to filter the DataFrame
     condition = df[column_name].iloc[:, 0] == choice

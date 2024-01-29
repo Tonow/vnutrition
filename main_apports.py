@@ -1,12 +1,12 @@
 import streamlit as st
 from config import TYPE_CASE, APPORT_QTY, APPORT_README_PATH
-from apport.apports import (
+from intake.intake import (
     get_df,
     filter_multi_index_dataframe,
     get_needs_type,
     set_to_numeric,
 )
-from apport.view import show_columns_value, get_readme
+from intake.view import show_columns_value, get_readme
 
 get_readme(APPORT_README_PATH)
 type_case = st.selectbox("cas", TYPE_CASE)
