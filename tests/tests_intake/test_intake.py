@@ -2,7 +2,7 @@ import unittest
 import pandas as pd
 import numpy as np
 
-from intake.intake import set_to_numeric, get_df
+from intake.intake import set_object_to_numeric, get_df
 
 
 class TestSetToNumeric(unittest.TestCase):
@@ -17,7 +17,7 @@ class TestSetToNumeric(unittest.TestCase):
 
     def test_set_to_numeric(self):
         # Test the function with a DataFrame containing numeric and non-numeric values
-        result = set_to_numeric(self.df)
+        result = set_object_to_numeric(self.df)
 
         # Assert that the 'Column1' and 'Column2' are now numeric, and 'Column3' remains unchanged
         expected_result = pd.DataFrame(
@@ -37,7 +37,7 @@ class TestSetToNumeric(unittest.TestCase):
             "Column3": [1, 2, 3],
         }
         df_with_commas = pd.DataFrame(data)
-        result = set_to_numeric(df_with_commas)
+        result = set_object_to_numeric(df_with_commas)
 
         # Assert that the 'Column1' and 'Column2' are now numeric, and 'Column3' remains unchanged
         expected_result = pd.DataFrame(
@@ -57,7 +57,7 @@ class TestSetToNumeric(unittest.TestCase):
             "Column3": [1, 2, 3],
         }
         df_numeric_only = pd.DataFrame(data)
-        result = set_to_numeric(df_numeric_only)
+        result = set_object_to_numeric(df_numeric_only)
 
         # Assert that the DataFrame remains unchanged
         pd.testing.assert_frame_equal(result, df_numeric_only)

@@ -4,7 +4,7 @@ from intake.intake import (
     get_df,
     filter_multi_index_dataframe,
     get_needs_type,
-    set_to_numeric,
+    set_object_to_numeric,
 )
 from intake.view import show_columns_value, get_readme
 
@@ -18,7 +18,7 @@ need_code_key = st.selectbox("besoin", APPORT_QTY.keys())
 
 try:
     filtered_df = get_needs_type(filtered_rows, APPORT_QTY[need_code_key])
-    filtered_df = set_to_numeric(filtered_df)
+    filtered_df = set_object_to_numeric(filtered_df)
     show_columns_value(filtered_df)
     st.dataframe(filtered_df)
 except KeyError:
