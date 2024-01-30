@@ -1,5 +1,6 @@
 import streamlit as st
 
+
 def show_columns_value(df):
     columns_name = st.multiselect("apport", df.columns)
     for column_name in columns_name:
@@ -11,6 +12,7 @@ def show_columns_value(df):
                 st.error(f"Pour {column_name} : {ve}")
         else:
             st.error(f"Aucune Valeur pour {column_name}")
+
 
 def get_readme(path: str):
     # Read content from README.md
