@@ -33,6 +33,7 @@ before_script:
 
 precommit:
   before_script:
+    - apt update && apt install -y --no-install-recommends git
     - pip install -r requirements-dev.txt
   script:
     - pre-commit run --all-files
