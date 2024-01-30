@@ -10,7 +10,7 @@ from intake.view import show_columns_value, get_readme
 
 get_readme(APPORT_README_PATH)
 type_case = st.selectbox("cas", TYPE_CASE)
-df = get_df(type_case)
+df = get_df(type_case, ("data","apport"))
 age_choice = st.selectbox("age", df["Age"])
 filtered_rows = filter_multi_index_dataframe(df, choice=age_choice, column_name="Age")
 

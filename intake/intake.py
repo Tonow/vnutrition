@@ -4,10 +4,10 @@ from os import path
 import streamlit as st
 
 @st.cache_data
-def get_df(type_case: str) -> pd.DataFrame:
+def get_df(type_case: str, file_path: tuple) -> pd.DataFrame:
 
     nutri_file = f"apport_{type_case}.csv"
-    path_nutri_file = path.join("data","apport", nutri_file)
+    path_nutri_file = path.join(*file_path, nutri_file)
     df = pd.read_csv(path_nutri_file, header=[0, 1])
 
     df = df.reset_index()
