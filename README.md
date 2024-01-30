@@ -17,3 +17,27 @@ this project use :
 ## Parts infos
 
 * [intake](intake/README.md)
+
+## Run or use locally
+
+- [ ] set virtual environment
+- [ ] install requirement
+    ```shell
+    pip install -r requirements.txt
+    ```
+- [ ] run
+    ```shell
+    streamlit run main_apports.py
+    ```
+
+## Run tests
+
+- [ ] set virtual environment
+- [ ] run tests
+    ```shell
+    pip install -r requirements-dev.txt
+    ```
+- [ ] run tests
+    ```shell
+    python -m pytest  --cov --cov-report term
+    ```
