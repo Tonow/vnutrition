@@ -1,4 +1,4 @@
-SOURCE_FILE = "data/Table Ciqual 2020_FR_2020 07 07.xls"
+CIQUAL_FILE = "data/Table Ciqual 2020_FR_2020 07 07.xls"
 ALIM_GRP_CODE_TO_DROP = [1, 8, 11]
 ALIM_SSGRP_CODE_TO_DROP = [
     401,
@@ -38,4 +38,4 @@ APPORT_QTY = {
     "Besoin énergétique estimatif": "BÉE",
     "Risque réduit de maladies chroniques": "RRMC",
 }
-APPORT_README_PATH = "intake"
+INTAKE_README_PATH = ["pages", "intake"]

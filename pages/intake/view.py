@@ -12,12 +12,3 @@ def show_columns_value(df):
                 st.error(f"Pour {column_name} : {ve}")
         else:
             st.error(f"Aucune Valeur pour {column_name}")
-
-
-def get_readme(path: str):
-    # Read content from README.md
-    with open(f"{path}/README.md", "r", encoding="utf-8") as readme_file:
-        readme_content = readme_file.read()
-
-    # Display the content using st.markdown()
-    st.markdown(readme_content)

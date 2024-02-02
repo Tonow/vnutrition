@@ -1,14 +1,15 @@
 import streamlit as st
-from config import TYPE_CASE, APPORT_QTY, APPORT_README_PATH
-from intake.intake import (
+from config import TYPE_CASE, APPORT_QTY, INTAKE_README_PATH
+from pages.intake.model import (
     get_df,
     filter_multi_index_dataframe,
     get_needs_type,
     set_object_to_numeric,
 )
-from intake.view import show_columns_value, get_readme
+from pages.intake.view import show_columns_value
+from tools.view import get_readme
 
-get_readme(APPORT_README_PATH)
+get_readme(INTAKE_README_PATH)
 type_case = st.selectbox("cas", TYPE_CASE)
 df = get_df(type_case, ("data", "apport"))
 age_choice = st.selectbox("age", df["Age"])

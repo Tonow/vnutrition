@@ -2,7 +2,7 @@ import unittest
 import pandas as pd
 import numpy as np
 
-from intake.intake import set_object_to_numeric, get_df
+from pages.intake.model import set_object_to_numeric, get_df
 
 
 class TestSetToNumeric(unittest.TestCase):
