@@ -1,5 +1,5 @@
 import pandas as pd
-from config import (
+from pages.foodfact.config import (
     ALIM_SSGRP_CODE_TO_DROP,
     ALIM_GRP_CODE_TO_DROP,
     ALIM_SSSSGRP_CODE_TO_DROP,
@@ -35,7 +35,8 @@ class FoodFact:
             lambda x: pd.to_numeric(x.str.replace(",", "."), errors="coerce")
         )
 
-    def get_float_string_columns(self):
-        float_columns = self.df.select_dtypes(include="float64").columns
-        str_columns = self.df.select_dtypes(include="object").columns
-        return float_columns, str_columns
+    def calculate_with_weight(self, row, col, weight):
+        if row[weight] >= 0:
+            return row[col] * row[weight]
+        else:
+            return 0
