@@ -15,7 +15,7 @@ def show_columns_foodfact_value(
     )
     columns_choice = set(columns) - set(default_cols)
     foodfact_df_sorted = foodfact_df.sort_values(
-        by=list - -(columns_choice), ascending=False
+        by=list(columns_choice), ascending=False
     )
     st.dataframe(foodfact_df_sorted[columns], hide_index=True)
 
