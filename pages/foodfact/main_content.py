@@ -26,7 +26,7 @@ def foodfact_get_data() -> pd.DataFrame:
 def show_main_content():
     """Show all widget for the main content."""
     df = foodfact_get_data()
-    df, columns = filters_columns_multiselect(
+    df, _ = filters_columns_multiselect(
         df=df, default_cols=[FER_CLN], hide_default_cols=[NAME, ALIM_SSGRP_NOM_FR]
     )
     df = filters_rows_on_columns_multiselect(df, ALIM_SSGRP_NOM_FR, "Groupe d'aliment")

@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 from tools.format_data import (
-    filter_dataframe_columns_with_stings,
+    filter_dataframe_columns_exact_stings,
     set_object_to_numeric,
 )
 
@@ -83,21 +83,21 @@ class TestFilterDataFrame(unittest.TestCase):
 
     def test_filter_single_string(self):
         filter_strings = ["légumes"]
-        result = filter_dataframe_columns_with_stings(
+        result = filter_dataframe_columns_exact_stings(
             self.df, self.column_name, filter_strings
         )
         self.assertTrue(result.empty)
 
     def test_filter_multiple_strings(self):
         filter_strings = ["légumes", "condiment"]
-        result = filter_dataframe_columns_with_stings(
+        result = filter_dataframe_columns_exact_stings(
             self.df, self.column_name, filter_strings
         )
         self.assertTrue(result.empty)
 
     def test_filter_total_single_string(self):
         filter_strings = ["Légumes et fruits"]
-        result = filter_dataframe_columns_with_stings(
+        result = filter_dataframe_columns_exact_stings(
             self.df, self.column_name, filter_strings
         )
         expected = pd.DataFrame({"alim_ssgrp_nom_fr": ["Légumes et fruits"]})
@@ -106,7 +106,7 @@ class TestFilterDataFrame(unittest.TestCase):
 
     def test_filter__total_multiple_strings(self):
         filter_strings = ["Légumes et fruits", "condiments"]
-        result = filter_dataframe_columns_with_stings(
+        result = filter_dataframe_columns_exact_stings(
             self.df, self.column_name, filter_strings
         )
         expected = pd.DataFrame(
@@ -117,14 +117,14 @@ class TestFilterDataFrame(unittest.TestCase):
 
     def test_wrong_filter_strings(self):
         filter_strings = ["no present"]
-        result = filter_dataframe_columns_with_stings(
+        result = filter_dataframe_columns_exact_stings(
             self.df, self.column_name, filter_strings
         )
         self.assertTrue(result.empty)
 
     def test_empty_filter_strings(self):
         filter_strings = []
-        result = filter_dataframe_columns_with_stings(
+        result = filter_dataframe_columns_exact_stings(
             self.df, self.column_name, filter_strings
         )
         pd.testing.assert_frame_equal(result, self.df)

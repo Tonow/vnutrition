@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 from typing import Tuple
 
-from tools.format_data import filter_dataframe_columns_with_stings
+from tools.format_data import filter_dataframe_columns_exact_stings
 from tools.data_infos import get_float_string_columns
 
 
@@ -37,7 +37,7 @@ def filters_rows_on_columns_multiselect(
     """
     column_items_to_filter = st.multiselect(label, set(df[column_name].values.tolist()))
     if column_items_to_filter:
-        df = filter_dataframe_columns_with_stings(
+        df = filter_dataframe_columns_exact_stings(
             df, column_name, column_items_to_filter
         )
     return df
