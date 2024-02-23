@@ -10,7 +10,7 @@ from tools.view import (
 )
 
 
-def get_data() -> pd.DataFrame:
+def foodfact_get_data() -> pd.DataFrame:
     """Retrieve the dataframe pre_formatted
 
     Returns:
@@ -25,15 +25,15 @@ def get_data() -> pd.DataFrame:
 
 def show_main_content():
     """Show all widget for the main content."""
-    df = get_data()
+    df = foodfact_get_data()
     df, columns = filters_columns_multiselect(
-        df=df, default_cols=[NAME, FER_CLN, ALIM_SSGRP_NOM_FR]
+        df=df, default_cols=[FER_CLN], hide_default_cols=[NAME, ALIM_SSGRP_NOM_FR]
     )
     df = filters_rows_on_columns_multiselect(df, ALIM_SSGRP_NOM_FR, "Groupe d'aliment")
     df = sort_one_column(df=df)
     df = search_str(df=df, column_to_search=NAME, label="Chercher un nom:")
 
-    st.dataframe(df)
+    st.dataframe(df, hide_index=True)
 
 
 # to_include = "a inclure"

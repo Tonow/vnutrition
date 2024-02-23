@@ -44,7 +44,10 @@ def filters_rows_on_columns_multiselect(
 
 
 def filters_columns_multiselect(
-    df: pd.DataFrame, label: str = "Columns to keep", default_cols: list = None
+    df: pd.DataFrame,
+    label: str = "Columns to keep",
+    default_cols: list = None,
+    hide_default_cols: list = None,
 ) -> Tuple[pd.DataFrame, list]:
     """With the multiselect widget filter on dataframe the matching columns.
 
@@ -52,12 +55,17 @@ def filters_columns_multiselect(
         df (pd.DataFrame): Initial dataframe.
         label (str): Label of the widget. Defaults to ""Columns to keep".
         default_cols (list, optional): Default columns for the widget. Defaults to None.
+        hide_default_cols (list, optional): Columns show in dataframe but not on widget. Defaults to None.
 
     Returns:
         Tuple[pd.DataFrame, list]: (Dataframe filtered with right columns,
             List of columns choose.
     """
-    columns = st.multiselect(label, df.columns.values.tolist(), default_cols)
+    columns_choice = set(df.columns.values.tolist()) - set(hide_default_cols)
+    columns = st.multiselect(label, columns_choice, default_cols)
+    if hide_default_cols:
+        hide_default_cols += columns
+        columns = list(set(hide_default_cols))
     return df[columns], columns
 
 
